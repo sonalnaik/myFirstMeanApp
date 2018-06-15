@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use('/api',api);
 
 app.get('*',function(req,res){
-    res.send("this is from express framework");
+    //res.send("this is from express framework");
    res.sendFile(path.join(__dirname,'frontend/dist/index.html'));
 
 });
